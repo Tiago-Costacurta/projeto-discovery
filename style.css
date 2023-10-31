@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
@@ -31,6 +32,7 @@ body {
   background-size: cover;*/
 
   background: var(--bg-url) no-repeat top center / cover;
+  height: 100vh;
 }
 
 body * {
@@ -64,7 +66,6 @@ body * {
   width: 64px;
 
   margin: 4px auto;
-
 }
 
 #switch button {
@@ -162,4 +163,15 @@ footer {
   padding: 24px;
   text-align: center;
   font-size: 14px;
+}
+
+/* media query*/
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
