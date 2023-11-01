@@ -8,17 +8,17 @@ function toggleMode() {
 
   if (html.classList.contains("light")) {
     // se tiver ligth mode adicionar a imagem light
-    img.setAttribute("src", "./assets/avatar-light.png")
+    img.setAttribute("src", "./assets/foto.jpg")
     img.setAttribute(
       "alt",
-      "Foto de Mayk Brito sorrindo, usando oculos e camisa preta, sem barba e fundo colorido"
+      "Avatar"
     )
   } else {
     //se tiver sem light mode manter imagem normal
-    img.setAttribute("src", "./assets/avatar.png")
+    img.setAttribute("src", "./assets/foto.jpg")
     img.setAttribute(
       "alt",
-      "Foto de Mayk Brito sorrindo, usando oculos e camisa preta, barba e fundo amarelo"
+      "avatar"
     )
   }
 }
